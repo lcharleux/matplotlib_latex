@@ -4,11 +4,11 @@ RCPARAMS = {
   "font.family": "serif", # use serif/main font for text elements
   "text.usetex": True,    # use inline math for ticks
   "pgf.rcfonts": False,   # don't setup fonts from rc parameters
-  "pgf.preamble": [
-       r"\usepackage{fontspec}",
-       r"\usepackage{amsmath}",
-       r"\setmainfont{XCharter}", # Charter BT
-       ],
+  "pgf.preamble": """
+  \\usepackage{fontspec}
+  \\usepackage{amsmath}
+  \\setmainfont{XCharter}
+  """,
   "font.size"       : 10,
   "xtick.labelsize" : 8,
   "ytick.labelsize" : 8,
