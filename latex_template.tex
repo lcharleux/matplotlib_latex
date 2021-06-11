@@ -8,10 +8,17 @@
 \usepackage{blindtext}
 \usepackage{lipsum}
 \usepackage[left=2cm,right=2cm,top=2cm,bottom=2cm]{geometry}
+\newlength\textwidthcm
+\textwidthcm=.03514598035146\textwidth
+
 \author{Ludovic}
 \title{\LaTeX \& Python pour de belles figures}
 \begin{document}
+{\catcode`p=12 \catcode`t=12 \gdef\cm#1pt{#1cm}}
+
 \maketitle
+
+\noindent Note: the textwidth is \expandafter\cm\the\textwidthcm.
 
 \blindmathpaper
 
